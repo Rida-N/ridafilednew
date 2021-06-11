@@ -1,6 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: "ridafieldnew",
+    title: "Rida's Field",
+    description: `Hi friend, this is a personal site of tech & design study notes, art works, and all sorts of mind-wanderings.`,
+    setences: [
+      `One who makes no mistakes makes nothing at all`,
+      `The ideal is not just tensionless state. It is the creative tension. `,
+      `You don’t have to be responsible for the world that you’re in.`,
+      `I was born not knowing, and have only had a little time to change that here and there. `,
+    ],
     siteUrl: "https://www.ridafield.com",
   },
   plugins: [
@@ -11,7 +18,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/ridafield.png",
+        icon: "src/assets/images/ridafield-part.png",
       },
     },
     "gatsby-transformer-remark",
@@ -21,7 +28,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: "./src/assets/images/",
       },
       __key: "images",
     },
