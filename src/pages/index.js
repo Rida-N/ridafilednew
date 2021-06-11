@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Flowers from "../assets/videos/flowers.mp4";
 import "../assets/styles/main.scss";
 import { useStaticQuery, graphql } from "gatsby";
+import { useEffect } from "react";
 
 const query = graphql`
   {
@@ -20,9 +21,13 @@ const query = graphql`
 const theme = ["orange", ""];
 
 const IndexPage = () => {
+  useEffect(() => {
+    document.documentElement.setAttribute("theme", "orange");
+  }, []);
+
   const themeVersion = Math.floor(Math.random() * 4);
   const data = useStaticQuery(query).site.siteMetadata;
-  document.documentElement.setAttribute("theme", "orange");
+
   return (
     <Layout seo={{ title: "Home" }}>
       <Header

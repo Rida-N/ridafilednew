@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b main",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
@@ -30,5 +31,8 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "sass": "^1.34.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.0"
   }
 }
