@@ -1,0 +1,2 @@
+(self.webpackChunkridafieldnew=self.webpackChunkridafieldnew||[]).push([[159],{1973:function(e,n,t){"use strict";t.r(n);var a=t(7294),i=t(2478);n.default=function(){return a.createElement(i.Z,{seo:{title:"Tags"}})}}}]);
+//# sourceMappingURL=component---src-pages-tags-js-883bd20dbb59d9bdba75.js.map

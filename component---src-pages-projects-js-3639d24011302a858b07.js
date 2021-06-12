@@ -1,0 +1,2 @@
+(self.webpackChunkridafieldnew=self.webpackChunkridafieldnew||[]).push([[853],{7744:function(e,t,n){"use strict";n.r(t);var r=n(7294),i=n(2478);t.default=function(){return r.createElement(i.Z,{seo:{title:"Projects"}})}}}]);
+//# sourceMappingURL=component---src-pages-projects-js-3639d24011302a858b07.js.map
