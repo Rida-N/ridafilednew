@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: "Rida's Field",
-    description: `Hi friend, this is a personal site of tech & design study notes, art works, and all sorts of mind-wanderings.`,
+    description: `Hi friend, this is a personal site of tech & design study notes, art works, and all sorts of mind-wandering.`,
     setences: [
       `One who makes no mistakes makes nothing at all`,
       `The ideal is not just tensionless state. It is the creative tension. `,
