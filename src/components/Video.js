@@ -2,7 +2,7 @@ import React from "react";
 
 const Video = ({ src, title, ...props }) => {
   return (
-    <div className="video">
+    <>
       {/* This is for embeded video
       <iframe
         src={src}
@@ -13,11 +13,11 @@ const Video = ({ src, title, ...props }) => {
         mozallowfullscreen="true"
         allowFullScreen
       /> */}
-      <video className="header-video" preload="auto" loop autoPlay muted poster>
+      <video preload="auto" loop autoPlay muted poster="true">
         <source src={src} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    </div>
+    </>
   );
 };
 
