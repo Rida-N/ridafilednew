@@ -9,7 +9,6 @@ import "../assets/styles/main.scss";
 import { useStaticQuery, graphql } from "gatsby";
 import { useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import Video from "../components/Video";
 
 const query = graphql`
   {
@@ -51,13 +50,17 @@ const IndexPage = () => {
               formats={["auto", "webp", "avif"]}
               placeholder="tracedSVG"
             />
-            <Video
+            <video
               className="header-video"
-              {...{
-                src: Flowers_1,
-                title: "flowers",
-              }}
-            />
+              preload="auto"
+              loop
+              autoPlay
+              muted
+              poster="true"
+            >
+              <source src={Flowers_1} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </>
         )}
         {themeVersion === 1 && (
@@ -69,13 +72,17 @@ const IndexPage = () => {
               formats={["auto", "webp", "avif"]}
               placeholder="tracedSVG"
             />
-            <Video
+            <video
               className="header-video"
-              {...{
-                src: Flowers_2,
-                title: "flowers",
-              }}
-            />
+              preload="auto"
+              loop
+              autoPlay
+              muted
+              poster="true"
+            >
+              <source src={Flowers_2} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </>
         )}
         {themeVersion === 2 && (
@@ -87,13 +94,17 @@ const IndexPage = () => {
               formats={["auto", "webp", "avif"]}
               placeholder="tracedSVG"
             />
-            <Video
+            <video
               className="header-video"
-              {...{
-                src: Flowers_3,
-                title: "flowers",
-              }}
-            />
+              preload="auto"
+              loop
+              autoPlay
+              muted
+              poster="true"
+            >
+              <source src={Flowers_3} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </>
         )}
         {themeVersion === 3 && (
@@ -105,13 +116,17 @@ const IndexPage = () => {
               formats={["auto", "webp", "avif"]}
               placeholder="tracedSVG"
             />
-            <Video
+            <video
               className="header-video"
-              {...{
-                src: Flowers_4,
-                title: "flowers",
-              }}
-            />
+              preload="auto"
+              loop
+              autoPlay
+              muted
+              poster="true"
+            >
+              <source src={Flowers_4} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </>
         )}
       </Header>
