@@ -26,6 +26,7 @@ const theme = ["orange", "red", "yellow", "lake"];
 
 const IndexPage = () => {
   const themeVersion = 2; //Math.floor(Math.random() * 4);
+  const curr_sentence = Math.floor(Math.random() * 4);
 
   useEffect(() => {
     document.documentElement.setAttribute("theme", theme[themeVersion]);
@@ -37,7 +38,7 @@ const IndexPage = () => {
     <Layout seo={{ title: "Home" }}>
       <Header
         settings={{
-          text1: `“ ${data.setences[themeVersion]} ”`,
+          text1: `“ ${data.setences[curr_sentence]} ”`,
           text2: data.description,
         }}
       >
