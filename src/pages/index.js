@@ -25,7 +25,7 @@ const query = graphql`
 const theme = ["orange", "red", "yellow", "lake"];
 
 const IndexPage = () => {
-  const themeVersion = Math.floor(Math.random() * 4);
+  const themeVersion = 2; //Math.floor(Math.random() * 4);
 
   useEffect(() => {
     document.documentElement.setAttribute("theme", theme[themeVersion]);
