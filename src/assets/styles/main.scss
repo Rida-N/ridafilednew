@@ -130,11 +130,11 @@
     background-color: var(--header-text-shadow);
     text-align: center;
     padding: 2rem;
-    max-width: 75vw;
-
+    width: 75vw;
+    max-width: 60rem;
     h1 {
       font-size: 3.8rem;
-      font-weight: 600;
+      font-weight: 300;
     }
     p {
       font-weight: 400;

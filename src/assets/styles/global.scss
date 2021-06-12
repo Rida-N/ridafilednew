@@ -101,10 +101,11 @@
     --primary-1100: hsl(47, 47%, 7%);
     /* others */
     --nav-font-color: var(--grey-900);
+    --nav-text-shadow: hsl(0deg 0% 100% / 60%);
     --nav-img-style: none;
     --nav-link-color: var(--grey-900);
     --header-text-color: var(--grey-900);
-    --header-text-shadow: hsl(0deg 0% 100% / 25%);
+    --header-text-shadow: hsl(0deg 0% 100% / 60%);
   }
   &[theme="lake"] {
     /* primary */
