@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 
 import { FcMenu } from "react-icons/fc";
 import { BiSearch } from "react-icons/bi";
@@ -20,6 +21,13 @@ const Navbar = () => {
     <nav className="nav">
       <div className="nav-center">
         <div className="nav-header">
+          <StaticImage
+            className="nav-logo-img"
+            alt="logo"
+            src="../assets/images/ridafield-part.png"
+            formats={["auto", "webp", "avif"]}
+            placeholder="tracedSVG"
+          />
           <Link to="/">
             <span className="nav-logo">Rida's Field</span>
           </Link>

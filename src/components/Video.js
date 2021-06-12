@@ -13,8 +13,9 @@ const Video = ({ src, title, ...props }) => {
         mozallowfullscreen="true"
         allowFullScreen
       /> */}
-      <video className="header-video" preload="auto" loop autoPlay muted>
+      <video className="header-video" preload="auto" loop autoPlay muted poster>
         <source src={src} type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
     </div>
   );

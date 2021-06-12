@@ -30,6 +30,11 @@
     font-weight: 800;
     display: block;
     width: 13rem;
+    &-img {
+      width: 2rem;
+      margin-right: 2rem;
+      filter: brightness(2.5);
+    }
   }
   &-menuBtn {
     display: none;

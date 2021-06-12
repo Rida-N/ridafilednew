@@ -1,6 +1,4 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import Video from "./Video";
 
 /**
  *
@@ -9,19 +7,10 @@ import Video from "./Video";
  * image : alt, src, placeholder, layout; text1,text2
  * @returns
  */
-const Header = ({ type, settings }) => {
+const Header = ({ children, settings }) => {
   return (
     <header className="header">
-      {type === "video" && <Video {...settings} />}
-      {type === "image" && (
-        <StaticImage
-          className="header-img"
-          alt={settings.alt}
-          src={settings.src}
-          placeholder={settings.placeholder || "tracedSVG"}
-          layout={settings.layout || "fullWidth"}
-        ></StaticImage>
-      )}
+      {children}
       <div className="header-content">
         <div className="header-text">
           <h1>{settings.text1}</h1>

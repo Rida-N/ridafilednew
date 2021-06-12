@@ -5,6 +5,8 @@ import Flowers from "../assets/videos/flowers.mp4";
 import "../assets/styles/main.scss";
 import { useStaticQuery, graphql } from "gatsby";
 import { useEffect } from "react";
+import { StaticImage } from "gatsby-plugin-image";
+import Video from "../components/Video";
 
 const query = graphql`
   {
@@ -31,14 +33,33 @@ const IndexPage = () => {
   return (
     <Layout seo={{ title: "Home" }}>
       <Header
-        type="video"
         settings={{
-          src: Flowers,
-          title: "flowers",
           text1: `“ ${data.setences[themeVersion]} ”`,
           text2: data.description,
         }}
-      />
+      >
+        <Video
+          {...{
+            src: Flowers,
+            title: "flowers",
+          }}
+        />
+      </Header>
+      {/* <Header
+        settings={{
+          text1: `“ ${data.setences[themeVersion]} ”`,
+          text2: data.description,
+        }}
+      >
+        <StaticImage
+          className="header-img"
+          alt="flowers"
+          src="../assets/images/ridafield.png"
+          formats={["auto", "webp", "avif"]}
+          placeholder="tracedSVG"
+          layout="fullWidth"
+        />
+      </Header> */}
     </Layout>
   );
 };

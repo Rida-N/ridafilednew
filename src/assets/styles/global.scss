@@ -2,22 +2,23 @@
   /* THEMES*/
   --nav-text-shadow: rgba(255, 255, 255, 0.3);
   --header-text-shadow: rgba(255, 255, 255, 0.18);
+  --body-background: var(--grey-0);
   /* COLORS */
   /* primary */
-  --primary-0: hsl(140, 100%, 97%);
-  --primary-50: hsl(140, 100%, 92%);
-  --primary-100: hsl(140, 100%, 87%);
-  --primary-200: hsl(140, 100%, 82%);
-  --primary-300: hsl(140, 100%, 78%);
-  --primary-400: hsl(140, 100%, 73%);
+  --primary-0: hsl(0, 0%, 98%);
+  --primary-50: hsl(0, 0%, 98%);
+  --primary-100: hsl(0, 0%, 87%);
+  --primary-200: hsl(0, 0%, 82%);
+  --primary-300: hsl(0, 0%, 78%);
+  --primary-400: hsl(0, 0%, 73%);
   /* main */
-  --primary-500: hsl(140, 47%, 53%);
-  --primary-600: hsl(140, 47%, 58%);
-  --primary-700: hsl(140, 47%, 48%);
-  --primary-800: hsl(140, 47%, 37%);
-  --primary-900: hsl(140, 47%, 27%);
-  --primary-1000: hsl(140, 47%, 17%);
-  --primary-1100: hsl(140, 47%, 7%);
+  --primary-500: hsl(0, 0%, 53%);
+  --primary-600: hsl(0, 0%, 58%);
+  --primary-700: hsl(0, 0%, 48%);
+  --primary-800: hsl(0, 0%, 37%);
+  --primary-900: hsl(0, 0%, 27%);
+  --primary-1000: hsl(0, 0%, 17%);
+  --primary-1100: hsl(0, 0%, 7%);
   &[theme="orange"] {
     --primary-0: hsl(40, 100%, 97%);
     --primary-50: hsl(40, 100%, 92%);
@@ -33,6 +34,27 @@
     --primary-900: hsl(40, 47%, 27%);
     --primary-1000: hsl(40, 47%, 17%);
     --primary-1100: hsl(40, 47%, 7%);
+    /* others */
+    --body-background: var(--primary-500);
+  }
+  &[theme="green"] {
+    /* primary */
+    --primary-0: hsl(140, 100%, 97%);
+    --primary-50: hsl(140, 100%, 92%);
+    --primary-100: hsl(140, 100%, 87%);
+    --primary-200: hsl(140, 100%, 82%);
+    --primary-300: hsl(140, 100%, 78%);
+    --primary-400: hsl(140, 100%, 73%);
+    /* main */
+    --primary-500: hsl(140, 47%, 53%);
+    --primary-600: hsl(140, 47%, 58%);
+    --primary-700: hsl(140, 47%, 48%);
+    --primary-800: hsl(140, 47%, 37%);
+    --primary-900: hsl(140, 47%, 27%);
+    --primary-1000: hsl(140, 47%, 17%);
+    --primary-1100: hsl(140, 47%, 7%);
+    /* others */
+    --body-background: var(--primary-500);
   }
 
   /* grey */
@@ -99,7 +121,7 @@ html {
 }
 
 body {
-  background: var(--backgroundColor);
+  background: var(--body-background);
   color: var(--textColor);
   font-family: var(--bodyFont);
   -webkit-font-smoothing: antialiased;
