@@ -1,2 +1,0 @@
-(self.webpackChunkridafieldnew=self.webpackChunkridafieldnew||[]).push([[7],{223:function(e,a,t){"use strict";t.r(a);var l=t(7294),r=t(6802),s=t(2478),i=t(5072);a.default=function(){return l.createElement(s.Z,{seo:{title:"Blog"}},l.createElement(i.Z,null,l.createElement(r.S,{className:"header-video-img",alt:"flowers",src:"../assets/videos/flowers_3.jpg",formats:["auto","webp","avif"],placeholder:"tracedSVG",__imageData:t(4582)})))}}}]);
-//# sourceMappingURL=component---src-pages-blog-js-48dd077e172548673fca.js.map
