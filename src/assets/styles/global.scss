@@ -48,7 +48,7 @@
   --primary-900: hsl(0, 0%, 27%);
   --primary-1000: hsl(0, 0%, 17%);
   --primary-1100: hsl(0, 0%, 7%);
-  &[theme="orange"] {
+  &[theme="orangeFlowers"] {
     --primary-0: hsl(40, 100%, 97%);
     --primary-50: hsl(40, 100%, 92%);
     --primary-100: hsl(40, 100%, 87%);
@@ -65,7 +65,7 @@
     --primary-1100: hsl(40, 47%, 7%);
     /* others */
   }
-  &[theme="red"] {
+  &[theme="redMountainFlowers"] {
     --primary-0: hsl(23, 100%, 97%);
     --primary-50: hsl(23, 100%, 92%);
     --primary-100: hsl(23, 100%, 87%);
@@ -84,7 +84,7 @@
     --nav-text-shadow: rgb(121 121 121 / 30%);
     --header-text-shadow: rgb(90 90 90 / 30%);
   }
-  &[theme="yellow"] {
+  &[theme="yellowField"] {
     --primary-0: hsl(47, 100%, 97%);
     --primary-50: hsl(47, 100%, 92%);
     --primary-100: hsl(47, 100%, 87%);

@@ -8,13 +8,13 @@ const Blog = () => {
     <Layout seo={{ title: "Blog" }}>
       {/* TODO theme related */}
       <Header>
-        <StaticImage
+        {/* <StaticImage
           className="header-video-img"
           alt="flowers"
           src="../assets/videos/flowers_3.jpg"
           formats={["auto", "webp", "avif"]}
           placeholder="tracedSVG"
-        />
+        /> */}
       </Header>
     </Layout>
   );
