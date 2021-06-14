@@ -25,11 +25,11 @@ const IndexPage = ({ data }) => {
           text2: data.site.siteMetadata.description,
         }}
       >
-        {/* <GatsbyImage
+        <GatsbyImage
           className="header-video-img"
           image={backgroundImage.gatsbyImageData}
           alt={backgroundImage.title}
-        /> */}
+        />
         <video
           className="header-video"
           preload="auto"
