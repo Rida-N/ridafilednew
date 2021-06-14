@@ -21,13 +21,15 @@ const Navbar = () => {
     <nav className="nav">
       <div className="nav-center">
         <div className="nav-header">
-          <StaticImage
-            className="nav-logo-img"
-            alt="logo"
-            src="../assets/images/ridafield-part.png"
-            formats={["auto", "webp", "avif"]}
-            placeholder="tracedSVG"
-          />
+          <Link to="/">
+            <StaticImage
+              className="nav-logo-img"
+              alt="logo"
+              src="../assets/images/ridafield-part.png"
+              formats={["auto", "webp", "avif"]}
+              placeholder="tracedSVG"
+            />
+          </Link>
           <Link to="/">
             <span className="nav-logo">Rida's Field</span>
           </Link>
