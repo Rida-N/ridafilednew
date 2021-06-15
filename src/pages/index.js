@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import "../assets/styles/main.scss";
 import { graphql } from "gatsby";
 import { useEffect } from "react";
-import { GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const IndexPage = ({ data }) => {
   const themeVersion = Math.floor(Math.random() * 4);
@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
       >
         <GatsbyImage
           className="header-video-img"
-          image={backgroundImage.gatsbyImageData}
+          image={getImage(backgroundImage)}
           alt={backgroundImage.title}
         />
         <video
