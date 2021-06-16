@@ -1,20 +1,20 @@
 :root {
   /* grey */
   --grey-0: #fafafa;
-  --grey-50: #f8f8f8;
-  --grey-100: #f1f1f1;
-  --grey-200: #eeeeee;
-  --grey-300: #e9e9e9;
-  --grey-400: #d4d3d3;
-  --grey-500: #c7c7c7;
-  --grey-600: #b4b4b4;
-  --grey-700: #a0a0a0;
-  --grey-800: #7e807d;
-  --grey-900: #585858;
-  --grey-900: #585858;
-  --grey-950: #474747;
-  --grey-1000: #3a3a3a;
-  --grey-1100: #303030;
+  --grey-5: #f8f8f8;
+  --grey-10: #f1f1f1;
+  --grey-20: #eeeeee;
+  --grey-30: #e9e9e9;
+  --grey-40: #d4d3d3;
+  --grey-50: #c7c7c7;
+  --grey-60: #b4b4b4;
+  --grey-70: #a0a0a0;
+  --grey-80: #7e807d;
+  --grey-90: #585858;
+  --grey-90: #585858;
+  --grey-95: #474747;
+  --grey-100: #3a3a3a;
+  --grey-110: #303030;
   /* rest */
   --black: #222;
   --white: #fff;
@@ -35,112 +35,112 @@
   /* COLORS */
   /* primary */
   --primary-0: hsl(0, 0%, 98%);
-  --primary-50: hsl(0, 0%, 98%);
-  --primary-100: hsl(0, 0%, 87%);
-  --primary-200: hsl(0, 0%, 82%);
-  --primary-300: hsl(0, 0%, 78%);
-  --primary-400: hsl(0, 0%, 73%);
+  --primary-5: hsl(0, 0%, 98%);
+  --primary-10: hsl(0, 0%, 87%);
+  --primary-20: hsl(0, 0%, 82%);
+  --primary-30: hsl(0, 0%, 78%);
+  --primary-40: hsl(0, 0%, 73%);
   /* main */
-  --primary-500: hsl(0, 0%, 53%);
-  --primary-600: hsl(0, 0%, 58%);
-  --primary-700: hsl(0, 0%, 48%);
-  --primary-800: hsl(0, 0%, 37%);
-  --primary-900: hsl(0, 0%, 27%);
-  --primary-1000: hsl(0, 0%, 17%);
-  --primary-1100: hsl(0, 0%, 7%);
+  --primary-50: hsl(0, 0%, 53%);
+  --primary-60: hsl(0, 0%, 58%);
+  --primary-70: hsl(0, 0%, 48%);
+  --primary-80: hsl(0, 0%, 37%);
+  --primary-90: hsl(0, 0%, 27%);
+  --primary-100: hsl(0, 0%, 17%);
+  --primary-110: hsl(0, 0%, 7%);
   &[theme="orangeFlowers"] {
     --primary-0: hsl(40, 100%, 97%);
-    --primary-50: hsl(40, 100%, 92%);
-    --primary-100: hsl(40, 100%, 87%);
-    --primary-200: hsl(40, 100%, 82%);
-    --primary-300: hsl(40, 100%, 78%);
-    --primary-400: hsl(40, 100%, 73%);
+    --primary-5: hsl(40, 100%, 92%);
+    --primary-10: hsl(40, 100%, 87%);
+    --primary-20: hsl(40, 100%, 82%);
+    --primary-30: hsl(40, 100%, 78%);
+    --primary-40: hsl(40, 100%, 73%);
     /* main */
-    --primary-500: hsl(40, 59%, 59%);
-    --primary-600: hsl(40, 51%, 55%);
-    --primary-700: hsl(40, 47%, 48%);
-    --primary-800: hsl(40, 47%, 37%);
-    --primary-900: hsl(40, 47%, 27%);
-    --primary-1000: hsl(40, 47%, 17%);
-    --primary-1100: hsl(40, 47%, 7%);
+    --primary-50: hsl(40, 59%, 59%);
+    --primary-60: hsl(40, 51%, 55%);
+    --primary-70: hsl(40, 47%, 48%);
+    --primary-80: hsl(40, 47%, 37%);
+    --primary-90: hsl(40, 47%, 27%);
+    --primary-100: hsl(40, 47%, 17%);
+    --primary-110: hsl(40, 47%, 7%);
     /* others */
   }
   &[theme="redMountainFlowers"] {
     --primary-0: hsl(23, 100%, 97%);
-    --primary-50: hsl(23, 100%, 92%);
-    --primary-100: hsl(23, 100%, 87%);
-    --primary-200: hsl(23, 100%, 82%);
-    --primary-300: hsl(23, 100%, 78%);
-    --primary-230: hsl(23, 100%, 73%);
+    --primary-5: hsl(23, 100%, 92%);
+    --primary-10: hsl(23, 100%, 87%);
+    --primary-20: hsl(23, 100%, 82%);
+    --primary-30: hsl(23, 100%, 78%);
+    --primary-23: hsl(23, 100%, 73%);
     /* main */
-    --primary-500: hsl(23, 59%, 59%);
-    --primary-600: hsl(23, 51%, 55%);
-    --primary-700: hsl(23, 47%, 48%);
-    --primary-800: hsl(23, 47%, 37%);
-    --primary-900: hsl(23, 47%, 27%);
-    --primary-1000: hsl(23, 47%, 17%);
-    --primary-1100: hsl(23, 47%, 7%);
+    --primary-50: hsl(23, 59%, 59%);
+    --primary-60: hsl(23, 51%, 55%);
+    --primary-70: hsl(23, 47%, 48%);
+    --primary-80: hsl(23, 47%, 37%);
+    --primary-90: hsl(23, 47%, 27%);
+    --primary-100: hsl(23, 47%, 17%);
+    --primary-110: hsl(23, 47%, 7%);
     /* others */
     --nav-text-shadow: rgb(121 121 121 / 30%);
     --header-text-shadow: rgb(90 90 90 / 30%);
   }
   &[theme="yellowField"] {
     --primary-0: hsl(47, 100%, 97%);
-    --primary-50: hsl(47, 100%, 92%);
-    --primary-100: hsl(47, 100%, 87%);
-    --primary-200: hsl(47, 100%, 82%);
-    --primary-300: hsl(47, 100%, 78%);
-    --primary-470: hsl(47, 100%, 73%);
+    -primary-5: hsl(47, 100%, 92%);
+    --primary-10: hsl(47, 100%, 87%);
+    --primary-20: hsl(47, 100%, 82%);
+    --primary-30: hsl(47, 100%, 78%);
+    --primary-47: hsl(47, 100%, 73%);
     /* main */
-    --primary-500: hsl(47, 59%, 59%);
-    --primary-600: hsl(47, 51%, 55%);
-    --primary-700: hsl(47, 47%, 48%);
-    --primary-800: hsl(47, 47%, 37%);
-    --primary-900: hsl(47, 47%, 27%);
-    --primary-1000: hsl(47, 47%, 17%);
-    --primary-1100: hsl(47, 47%, 7%);
+    --primary-50: hsl(47, 59%, 59%);
+    --primary-60: hsl(47, 51%, 55%);
+    --primary-70: hsl(47, 47%, 48%);
+    --primary-80: hsl(47, 47%, 37%);
+    --primary-90: hsl(47, 47%, 27%);
+    --primary-100: hsl(47, 47%, 17%);
+    --primary-110: hsl(47, 47%, 7%);
     /* others */
-    --nav-font-color: var(--grey-900);
+    --nav-font-color: var(--grey-90);
     --nav-text-shadow: hsl(0deg 0% 100% / 60%);
     --nav-img-style: none;
-    --nav-link-color: var(--grey-900);
-    --header-text-color: var(--grey-900);
+    --nav-link-color: var(--grey-90);
+    --header-text-color: var(--grey-90);
     --header-text-shadow: hsl(0deg 0% 100% / 60%);
   }
   &[theme="lake"] {
     /* primary */
     --primary-0: hsl(140, 100%, 97%);
-    --primary-50: hsl(140, 100%, 92%);
-    --primary-100: hsl(140, 100%, 87%);
-    --primary-200: hsl(140, 100%, 82%);
-    --primary-300: hsl(140, 100%, 78%);
-    --primary-400: hsl(140, 100%, 73%);
+    --primary-5: hsl(140, 100%, 92%);
+    --primary-10: hsl(140, 100%, 87%);
+    --primary-20: hsl(140, 100%, 82%);
+    --primary-30: hsl(140, 100%, 78%);
+    --primary-40: hsl(140, 100%, 73%);
     /* main */
-    --primary-500: hsl(140, 47%, 53%);
-    --primary-600: hsl(140, 47%, 58%);
-    --primary-700: hsl(140, 47%, 48%);
-    --primary-800: hsl(140, 47%, 37%);
-    --primary-900: hsl(140, 47%, 27%);
-    --primary-1000: hsl(140, 47%, 17%);
-    --primary-1100: hsl(140, 47%, 7%);
+    --primary-50: hsl(140, 47%, 53%);
+    --primary-60: hsl(140, 47%, 58%);
+    --primary-70: hsl(140, 47%, 48%);
+    --primary-80: hsl(140, 47%, 37%);
+    --primary-90: hsl(140, 47%, 27%);
+    --primary-100: hsl(140, 47%, 17%);
+    --primary-110: hsl(140, 47%, 7%);
     /* others */
   }
   &[theme="green"] {
     /* primary */
     --primary-0: hsl(140, 100%, 97%);
-    --primary-50: hsl(140, 100%, 92%);
-    --primary-100: hsl(140, 100%, 87%);
-    --primary-200: hsl(140, 100%, 82%);
-    --primary-300: hsl(140, 100%, 78%);
-    --primary-400: hsl(140, 100%, 73%);
+    --primary-5: hsl(140, 100%, 92%);
+    --primary-10: hsl(140, 100%, 87%);
+    --primary-20: hsl(140, 100%, 82%);
+    --primary-30: hsl(140, 100%, 78%);
+    --primary-40: hsl(140, 100%, 73%);
     /* main */
-    --primary-500: hsl(140, 47%, 53%);
-    --primary-600: hsl(140, 47%, 58%);
-    --primary-700: hsl(140, 47%, 48%);
-    --primary-800: hsl(140, 47%, 37%);
-    --primary-900: hsl(140, 47%, 27%);
-    --primary-1000: hsl(140, 47%, 17%);
-    --primary-1100: hsl(140, 47%, 7%);
+    --primary-50: hsl(140, 47%, 53%);
+    --primary-60: hsl(140, 47%, 58%);
+    --primary-70: hsl(140, 47%, 48%);
+    --primary-80: hsl(140, 47%, 37%);
+    --primary-90: hsl(140, 47%, 27%);
+    --primary-100: hsl(140, 47%, 17%);
+    --primary-110: hsl(140, 47%, 7%);
     /* others */
   }
 
@@ -163,7 +163,7 @@
 
   /* rest */
   --backgroundColor: var(--grey-0);
-  --textColor: var(--grey-1000);
+  --textColor: var(--grey-100);
   --borderRadius: 0.25rem;
   --letterSpacing: 1px;
   --transition: 0.3s ease-in-out all;
@@ -255,7 +255,7 @@ a {
 }
 
 .page {
-  margin: 2rem auto;
+  margin: 4rem auto;
   &-content {
     width: 85vw;
     margin: auto;
@@ -286,7 +286,7 @@ textarea {
   border-radius: var(--borderRadius);
   background: var(--grey-0);
   border-color: transparent;
-  border: 1px solid var(--grey-300);
+  border: 1px solid var(--grey-30);
 }
 .form-row {
   margin-bottom: 1rem;
@@ -297,7 +297,7 @@ textarea {
 }
 
 ::placeholder {
-  color: var(--grey-600);
+  color: var(--grey-60);
 }
 .form-alert {
   color: var(--red-dark);
@@ -314,7 +314,7 @@ button,
   cursor: pointer;
   appearance: none;
   color: var(--white);
-  background: var(--primary-500);
+  background: var(--primary-50);
   border: none;
   border-radius: var(--borderRadius);
   letter-spacing: var(--letterSpacing);
@@ -324,17 +324,17 @@ button,
   text-transform: capitalize;
   &:hover {
     color: var(--white);
-    background: var(--primary-700);
+    background: var(--primary-70);
     box-shadow: var(--shadow-2);
   }
 }
 
 button.hipster {
-  color: var(--primary-500);
-  background: var(--primary-50);
+  color: var(--primary-50);
+  background: var(--primary-5);
   box-shadow: var(--shadow-1);
   &:hover {
-    background: var(--primary-100);
+    background: var(--primary-10);
     box-shadow: var(--shadow-2);
   }
 }
@@ -343,7 +343,7 @@ button.plain {
   color: white;
   box-shadow: none;
   &:hover {
-    background: var(--grey-400);
+    background: var(--grey-40);
     box-shadow: var(--shadow-1);
   }
 }
@@ -354,11 +354,11 @@ button.small {
 }
 
 button.simple {
-  color: var(--grey-800);
+  color: var(--grey-80);
   padding: 0.5rem 2rem;
   border-radius: 0;
   background-color: transparent;
-  border: 1px solid var(--grey-700);
+  border: 1px solid var(--grey-70);
   box-shadow: none;
   &:hover {
     box-shadow: var(--shadow-2);

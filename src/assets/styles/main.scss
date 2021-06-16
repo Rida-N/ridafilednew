@@ -49,7 +49,7 @@
     margin: 0 1rem;
     padding: 1rem 0;
     &-active {
-      color: var(--primary-500);
+      color: var(--primary-50);
       font-weight: 500;
     }
     &:before {
@@ -58,7 +58,7 @@
       width: 0;
       height: 0;
       border-radius: 50%;
-      background-color: var(--primary-300);
+      background-color: var(--primary-30);
       left: 0;
       top: 0;
       right: 0;
@@ -76,7 +76,7 @@
   &-split {
     display: inline-block;
     width: 1px;
-    background-color: var(--grey-500);
+    background-color: var(--grey-50);
     height: 0.9rem;
   }
 
@@ -98,9 +98,9 @@
       font-size: 1.8rem;
     }
     &-link {
-      color: var(--grey-1000);
+      color: var(--grey-100);
       text-transform: capitalize;
-      border-top: 1px solid var(--grey-500);
+      border-top: 1px solid var(--grey-50);
       transition: var(--transition);
     }
     &-links {
