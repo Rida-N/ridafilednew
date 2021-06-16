@@ -43,7 +43,7 @@
 
 .blog {
   &-container {
-    background-color: #ffffffad; //TODO
+    background-color: var(--white-10);
     max-width: 80vw;
     margin: auto;
     padding: 2rem;
@@ -63,7 +63,7 @@
   }
   &-list {
     display: grid;
-    gap: 3rem;
+    gap: 1.3rem 3rem;
     padding: 1rem;
     grid-template-columns: var(--grid-show);
   }

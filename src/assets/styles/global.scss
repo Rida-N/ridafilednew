@@ -15,9 +15,17 @@
   --grey-95: #474747;
   --grey-100: #3a3a3a;
   --grey-110: #303030;
+  /* white */
+  --white-0: #fff;
+  --white-5: #ffffffe5;
+  --white-10: #ffffffce;
+  --white-20: #ffffffb0;
+  --white-30: #ffffff9d;
+  --white-40: #ffffff7e;
+  --white-50: #ffffff6b;
+
   /* rest */
   --black: #222;
-  --white: #fff;
   --red-light: #f8d7da;
   --red-dark: #842029;
   --green-light: #d1e7dd;
@@ -71,7 +79,7 @@
     --primary-10: hsl(23, 100%, 87%);
     --primary-20: hsl(23, 100%, 82%);
     --primary-30: hsl(23, 100%, 78%);
-    --primary-23: hsl(23, 100%, 73%);
+    --primary-40: hsl(23, 100%, 73%);
     /* main */
     --primary-50: hsl(23, 59%, 59%);
     --primary-60: hsl(23, 51%, 55%);
@@ -86,11 +94,11 @@
   }
   &[theme="yellowField"] {
     --primary-0: hsl(47, 100%, 97%);
-    -primary-5: hsl(47, 100%, 92%);
+    --primary-5: hsl(47, 100%, 92%);
     --primary-10: hsl(47, 100%, 87%);
     --primary-20: hsl(47, 100%, 82%);
     --primary-30: hsl(47, 100%, 78%);
-    --primary-47: hsl(47, 100%, 73%);
+    --primary-40: hsl(47, 100%, 73%);
     /* main */
     --primary-50: hsl(47, 59%, 59%);
     --primary-60: hsl(47, 51%, 55%);

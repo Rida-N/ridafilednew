@@ -1,14 +1,40 @@
 .tags {
-  &-container{
-    
+  &-container {
+    background-color: var(--white-10);
+    max-width: 80vw;
+    margin: auto;
+    padding: 2rem;
   }
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-auto-flow: column dense;
+  grid-template-rows: repeat(3, auto);
+  &-head {
+    padding: 1rem 2rem 2rem;
+    border-bottom: 1px solid var(--grey-40);
+    font-size: 1.4rem;
+  }
   &-item {
+    width: 20rem;
+    min-width: 10rem;
+    padding: 1rem;
+    &-title {
+      display: flex;
+      align-items: center;
+      span {
+        font-weight: 500;
+        color: var(--grey-80);
+      }
+    }
+    &_icon {
+      color: var(--primary-50);
+      font-size: 1.5rem;
+      padding-right: 0.3rem;
+    }
   }
   &-blog-list {
     a {
       display: block;
+      padding: 0.2rem;
     }
   }
 }

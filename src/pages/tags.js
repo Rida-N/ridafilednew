@@ -2,6 +2,7 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
+import { AiOutlineTags } from "react-icons/ai";
 import { graphql, useStaticQuery, Link } from "gatsby";
 
 const query_tagBlogs = graphql`
@@ -48,7 +49,7 @@ const Tags = () => {
           placeholder="tracedSVG"
         />
         <div className="tags-container">
-          <h4>All Tags</h4>
+          <h4 className="tags-head">All Tags</h4>
           <div className="tags">
             {Object.entries(tagBlogs).map((tag, tagIndex) => {
               const [tagName, blogs] = tag;
@@ -56,11 +57,13 @@ const Tags = () => {
               // console.log(tag);
               return (
                 <div className="tags-item" key={tagIndex}>
-                  <p>{tagName}</p>
+                  <p className="tags-item-title">
+                    <AiOutlineTags className="tags-item_icon" />
+                    <span>{tagName}</span>
+                  </p>
                   <div className="tags-blog-list">
                     {blogs.map((blog, index) => {
                       const [blogName, slug] = blog;
-                      console.log(blog);
                       return (
                         <Link
                           className="tag-blog-link"
