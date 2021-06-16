@@ -1,20 +1,27 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
+import "../assets/styles/global.scss";
 import "../assets/styles/main.scss";
+import "../assets/styles/pages.scss";
+import "../assets/styles/components.scss";
+
 import { graphql } from "gatsby";
 import { useEffect } from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const IndexPage = ({ data }) => {
-  const themeVersion = Math.floor(Math.random() * 4);
+  // temp set to 1
+  const themeVersion = 1; // Math.floor(Math.random() * 4);
   const curr_sentence = Math.floor(Math.random() * 4);
 
   const { title, backgroundImage, backgroundVideo } =
     data.allContentfulTheme.nodes[themeVersion];
 
   useEffect(() => {
+    console.log(title);
     document.documentElement.setAttribute("theme", title);
+    // document.documentElement.setAttribute("blog-show", "line"); //TODO
   }, []);
 
   return (
