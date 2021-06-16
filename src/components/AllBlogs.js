@@ -9,7 +9,7 @@ import { IoSearchOutline } from "react-icons/io5";
 
 const query = graphql`
   {
-    allContentfulBlog {
+    allContentfulBlog(sort: { fields: postedOn, order: ASC }) {
       nodes {
         title
         slug
