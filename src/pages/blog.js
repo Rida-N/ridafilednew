@@ -18,8 +18,10 @@ const Blog = () => {
           placeholder="tracedSVG"
         />
       </Header>
-      <AllTags />
-      <AllBlogs />
+      <div className="blog-container">
+        <AllTags />
+        <AllBlogs />
+      </div>
     </Layout>
   );
 };

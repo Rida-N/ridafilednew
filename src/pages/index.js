@@ -19,7 +19,6 @@ const IndexPage = ({ data }) => {
     data.allContentfulTheme.nodes[themeVersion];
 
   useEffect(() => {
-    console.log(title);
     document.documentElement.setAttribute("theme", title);
     // document.documentElement.setAttribute("blog-show", "line"); //TODO
   }, []);

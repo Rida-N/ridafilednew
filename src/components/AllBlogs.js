@@ -9,7 +9,7 @@ import { IoSearchOutline } from "react-icons/io5";
 
 const query = graphql`
   {
-    allContentfulBlog(sort: { fields: postedOn, order: ASC }) {
+    allContentfulBlog(sort: { fields: postedOn, order: DESC }) {
       nodes {
         title
         slug
@@ -35,7 +35,7 @@ const query = graphql`
 const AllBlogs = () => {
   const { nodes, totalCount } = useStaticQuery(query).allContentfulBlog;
   return (
-    <div className="blog-container">
+    <>
       <div className="blog-show-icons">
         <IoSearchOutline />
         <span>
@@ -76,7 +76,7 @@ const AllBlogs = () => {
           );
         })}
       </div>
-    </div>
+    </>
   );
 };
 
