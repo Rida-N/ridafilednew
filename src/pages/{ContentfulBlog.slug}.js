@@ -5,6 +5,7 @@ import Layout from "../components/Layout";
 import Header from "../components/Header";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { RiCalendarLine } from "react-icons/ri";
+import Markdown from "../components/Markdown";
 
 const BlogTemplate = ({ data }) => {
   console.log(data.contentfulBlog);
@@ -13,8 +14,8 @@ const BlogTemplate = ({ data }) => {
   const {
     timeToRead,
     wordCount: { words },
-    html,
-  } = mdContent.childMarkdownRemark;
+    body,
+  } = mdContent.childMdx;
   return (
     <Layout seo={{ title: title }}>
       {/* TODO theme related */}
@@ -47,7 +48,7 @@ const BlogTemplate = ({ data }) => {
               </p>
             </div>
           </div>
-          <div dangerouslySetInnerHTML={{ __html: html }}></div>
+          <Markdown>{body}</Markdown>
         </div>
       </div>
     </Layout>
@@ -68,12 +69,12 @@ export const query = graphql`
       }
       updatedAt
       mdContent {
-        childMarkdownRemark {
+        childMdx {
+          body
           timeToRead
           wordCount {
             words
           }
-          html
         }
       }
       slug

@@ -1,0 +1,133 @@
+//we add a prismjs theme to handle our code tags
+@import "~prismjs/themes/prism-solarizedlight.css";
+
+:root {
+  /* typography */
+  --defaultFontSize: 1rem;
+  --headingFont: "Google Sans Text", Roboto, "黑体", "Microsoft Yahei",
+    "Helvetica Neue", Helvetica, Tahoma;
+  --bodyFont: "黑体", "Microsoft Yahei";
+  --smallText: 0.8em;
+  --extraSmallText: 0.7em;
+}
+//and our markdown is handled below
+.markdown {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a,
+  li,
+  ul,
+  ol,
+  blockquote {
+    font-family: var(--bodyFont);
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    // letter-spacing: 0.1rem;
+  }
+
+  h5 {
+    margin-top: 2rem;
+    border-left: 0.5rem solid var(--primary-50);
+    padding-left: 1rem;
+  }
+
+  //   a {
+  //     @apply text-green-400;
+  //     @apply underline;
+  //     @apply transition-colors;
+  //     @apply duration-200;
+
+  //     &:hover {
+  //       @apply text-green-200;
+  //     }
+  //   }
+
+  //   p {
+  //     @apply mb-6;
+  //   }
+
+  //   /* Lists */
+  //   ul,
+  //   ol {
+  //     @apply mb-4;
+  //     @apply ml-8;
+  //   }
+
+  //   li > p,
+  //   li > ul,
+  //   li > ol {
+  //     @apply mb-0;
+  //   }
+
+  //   ol {
+  //     @apply list-decimal;
+  //   }
+
+  //   ul {
+  //     @apply list-disc;
+  //   }
+
+  //   /* Blockquotes */
+  //   blockquote {
+  //     @apply p-6;
+  //     @apply -mx-6;
+  //     @apply mb-4;
+  //     @apply bg-gray-900;
+
+  //     p {
+  //       @apply mb-0;
+  //     }
+  //   }
+
+  img {
+    max-width: 100%;
+    width: 55rem;
+    display: block;
+    margin: 3rem auto;
+  }
+
+  .gatsby-highlight-code-line {
+    background-color: #feb;
+    display: block;
+    margin-right: -1em;
+    margin-left: -1em;
+    padding-right: 1em;
+    padding-left: 0.75em;
+    border-left: 0.25em solid #f99;
+  }
+  /**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+  .gatsby-highlight {
+    background-color: #030303;
+    border-radius: 0.3em;
+    margin: 2em 0;
+    padding: 1em;
+    overflow: auto;
+    font-weight: 600;
+  }
+
+  /**
+   * Remove the default PrismJS theme background-color, border-radius, margin,
+   * padding and overflow.
+   * 1. Make the element just wide enough to fit its content.
+   * 2. Always fill the visible space in .gatsby-highlight.
+   * 3. Adjust the position of the line numbers
+   */
+  .gatsby-highlight pre[class*="language-"] {
+    background-color: transparent;
+    margin: 0.5rem;
+    padding: 0;
+    overflow: initial;
+    float: left; /* 1 */
+    min-width: 100%; /* 2 */
+  }
+}

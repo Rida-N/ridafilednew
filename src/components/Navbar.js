@@ -6,7 +6,7 @@ import { FcMenu } from "react-icons/fc";
 import { BiSearch } from "react-icons/bi";
 
 const links = [
-  { text: "Blog", url: "/blog" },
+  { text: "Blog", url: "/blogs" },
   { text: "Art Works", url: "/artworks" },
   { text: "Projects", url: "/projects" },
   { text: "Tags", url: "/tags" },

@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import "../assets/styles/global.scss";
 import "../assets/styles/main.scss";
 import "../assets/styles/pages.scss";
+import "../assets/styles/markdown.scss";
 import "../assets/styles/components.scss";
 
 import { graphql } from "gatsby";
