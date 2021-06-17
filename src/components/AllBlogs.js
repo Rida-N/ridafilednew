@@ -35,14 +35,14 @@ const AllBlogs = () => {
   const { nodes, totalCount } = useStaticQuery(query).allContentfulBlog;
   return (
     <>
-      <div className="blog-show-icons">
+      <div className="blogs-show-icons">
         <IoSearchOutline />
         <span>
           <BsFillGrid3X3GapFill />
           <FaThList />
         </span>
       </div>
-      <div className="blog-list">
+      <div className="blogs-list">
         {nodes.map((blog, index) => {
           const {
             title,
@@ -55,17 +55,21 @@ const AllBlogs = () => {
           } = blog;
 
           return (
-            <Link key={`blog_${index}`} to={`/${slug}`} className="blog-entry">
+            <Link
+              key={`blogs_${index}`}
+              to={`/${slug}`}
+              className="blogs-entry"
+            >
               <GatsbyImage
                 image={getImage(coverImage)}
-                className="blog-cover_img"
+                className="blogs-cover_img"
                 alt={title}
               />
-              <div className="blog-info">
+              <div className="blogs-info">
                 <h5>{title}</h5>
                 <p>
                   <span>
-                    <RiCalendarLine className="blog-icon_calendar" />
+                    <RiCalendarLine className="blogs-icon_calendar" />
                     {postedOn}
                   </span>
                   <span>{timeToRead} min read</span>

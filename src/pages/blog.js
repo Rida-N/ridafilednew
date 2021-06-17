@@ -18,7 +18,7 @@ const Blog = () => {
           placeholder="tracedSVG"
         />
       </Header>
-      <div className="blog-container">
+      <div className="blogs-container">
         <AllTags />
         <AllBlogs />
       </div>

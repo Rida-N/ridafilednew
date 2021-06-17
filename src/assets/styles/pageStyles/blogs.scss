@@ -1,0 +1,114 @@
+:root {
+  --grid-show: repeat(auto-fill, minmax(20rem, 1fr));
+  --entry-max: 25rem;
+  --img-height: 15rem;
+  --img-width: 100%;
+  --blog-entry-display: block;
+  --blog-info-margin: 2rem 0.5rem;
+  &[blog-show="line"] {
+    --grid-show: repeat(1, minmax(15rem, 1fr));
+    --entry-max: 100%;
+    --img-height: 10rem;
+    --img-width: 40%;
+    --blog-entry-display: flex;
+    --blog-info-margin: 2rem;
+  }
+}
+
+.blogs-tags {
+  padding: 1rem 2rem 2rem;
+  border-bottom: 1px solid var(--grey-40);
+  h4 {
+    font-size: 1.4rem;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 0.3rem;
+      font-weight: 500;
+      color: var(--grey-80);
+      &_icon {
+        color: var(--primary-50);
+        font-size: 1.3rem;
+        padding-right: 0.3rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
+.blogs {
+  &-container {
+    background-color: var(--white-10);
+    max-width: 80vw;
+    margin: auto;
+    padding: 2rem;
+  }
+
+  &-show-icons {
+    padding: 0.3rem 2rem;
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    svg {
+      color: var(--primary-50);
+      font-size: 1.3rem;
+      padding-right: 0.3rem;
+      margin-right: 1rem;
+    }
+  }
+  &-list {
+    display: grid;
+    gap: 1.3rem 3rem;
+    padding: 1rem;
+    grid-template-columns: var(--grid-show);
+  }
+  &-entry {
+    display: var(--blog-entry-display);
+    max-width: var(--entry-max);
+    &:hover,
+    &:focus {
+      transform: translateY(-1px);
+      box-shadow: rgb(0 0 0 / 15%) 0px 50px 80px -20px,
+        rgb(0 0 0 / 30%) 0px 30px 50px -40px;
+      background-color: white;
+      .blog-cover_img {
+        box-shadow: none;
+      }
+    }
+  }
+  &-cover_img {
+    height: var(--img-height);
+    width: var(--img-width);
+    box-shadow: rgb(0 0 0 / 15%) 0px 10px 60px -10px,
+      rgb(0 0 0 / 30%) 0px 10px 40px -10px;
+    transition: transform 0.3s var(--ease-out-quad),
+      box-shadow 0.3s var(--ease-out-quad);
+    filter: brightness(0.95);
+  }
+  &-info {
+    margin: var(--blog-info-margin);
+    h5 {
+      padding: 0.3rem;
+      margin: 0;
+    }
+    p,
+    span {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      color: var(--grey-80);
+      padding-right: 0.5rem;
+    }
+  }
+  &-icon_calendar {
+    color: var(--primary-50);
+    padding: 0.5rem;
+    vertical-align: middle;
+  }
+}

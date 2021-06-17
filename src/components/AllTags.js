@@ -36,20 +36,20 @@ const getAllTags = (nodes) => {
 const AllTags = () => {
   const allTags = getAllTags(useStaticQuery(query).allContentfulBlog.nodes);
   return (
-    <div className="blog-tags">
+    <div className="blogs-tags">
       {/* TODO 点击TAG的时候filter 显示指定TAG下的文章，然后All Blog后面显示选中的tag名 */}
       <h4>All Blogs</h4>
-      <div className="blog-tags-list">
+      <div className="blogs-tags-list">
         {allTags.map((tag, index) => {
           const [tagName, tagNumber] = tag;
           // const slug = slugify(tagName);
           return (
             <Link
-              className="blog-tags-list-item"
+              className="blogs-tags-list-item"
               to={`/tags/${slugify(tagName, { lower: true })}`}
               key={index}
             >
-              <AiOutlineTags className="blog-tags-list-item_icon" />
+              <AiOutlineTags className="blogs-tags-list-item_icon" />
               <span>{tagName}</span>
               <span>({tagNumber})</span>
             </Link>
