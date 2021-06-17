@@ -16,13 +16,13 @@
   --grey-100: #3a3a3a;
   --grey-110: #303030;
   /* white */
-  --white-0: #fff;
-  --white-5: #ffffffe5;
-  --white-10: #ffffffce;
-  --white-20: #ffffffb0;
-  --white-30: #ffffff9d;
-  --white-40: #ffffff7e;
-  --white-50: #ffffff6b;
+  --white-0: hsl(0, 0%, 100%);
+  --white-5: hsla(0, 0%, 100%, 0.898);
+  --white-10: hsla(0, 0%, 100%, 0.808);
+  --white-20: hsla(0, 0%, 100%, 0.69);
+  --white-30: hsla(0, 0%, 100%, 0.616);
+  --white-40: hsla(0, 0%, 100%, 0.494);
+  --white-50: hsla(0, 0%, 100%, 0.42);
 
   /* rest */
   --black: #222;
