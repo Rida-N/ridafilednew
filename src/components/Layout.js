@@ -3,6 +3,7 @@ import Navbar from "./Navbar.js";
 import Seo from "./Seo";
 import Footer from "./Footer.js";
 import { useEffect } from "react";
+import "../assets/styles/all.scss";
 
 const Layout = ({ children, seo }) => {
   // TODO use react redux
