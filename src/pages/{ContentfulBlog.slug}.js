@@ -8,7 +8,6 @@ import { RiCalendarLine } from "react-icons/ri";
 import Markdown from "../components/Markdown";
 
 const BlogTemplate = ({ data }) => {
-  console.log(data.contentfulBlog);
   const { title, coverImage, mdContent, postedOn, slug, updatedAt } =
     data.contentfulBlog;
   const {

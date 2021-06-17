@@ -55,7 +55,6 @@ const Tags = () => {
               //TODO tag排序，文章多的排序在前面
               const [tagName, blogs] = tag;
               // get images for tag (search blog with certain tag then get the first one)
-              // console.log(tag);
               return (
                 <div className="tags-item" key={tagIndex}>
                   <p className="tags-item-title">
