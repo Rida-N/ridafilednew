@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { AiOutlineTags } from "react-icons/ai";
 import { graphql, useStaticQuery } from "gatsby";
+import slugify from "slugify";
 
 //TODO 把AllTags存到redux里面
 const query = graphql`
@@ -45,7 +46,7 @@ const AllTags = () => {
           return (
             <Link
               className="blog-tags-list-item"
-              to={`/tags/${tagName}`}
+              to={`/tags/${slugify(tagName, { lower: true })}`}
               key={index}
             >
               <AiOutlineTags className="blog-tags-list-item_icon" />

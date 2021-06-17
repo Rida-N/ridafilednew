@@ -6,8 +6,8 @@
     padding: 2rem;
   }
   display: grid;
-  grid-auto-flow: column dense;
-  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   &-head {
     padding: 1rem 2rem 2rem;
     border-bottom: 1px solid var(--grey-40);

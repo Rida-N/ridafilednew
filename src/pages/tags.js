@@ -52,6 +52,7 @@ const Tags = () => {
           <h4 className="tags-head">All Tags</h4>
           <div className="tags">
             {Object.entries(tagBlogs).map((tag, tagIndex) => {
+              //TODO tag排序，文章多的排序在前面
               const [tagName, blogs] = tag;
               // get images for tag (search blog with certain tag then get the first one)
               // console.log(tag);
