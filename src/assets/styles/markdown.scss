@@ -75,7 +75,7 @@
  * and overflow that we removed from <pre>.
  */
   .gatsby-highlight {
-    background-color: #030303;
+    background-color: #282a36;
     border-radius: 0.3em;
     margin: 2em 0;
     padding: 1em;
@@ -97,5 +97,25 @@
     overflow: initial;
     float: left; /* 1 */
     min-width: 100%; /* 2 */
+  }
+
+  .gatsby-highlight::before {
+    content: attr(data-language);
+    position: absolute;
+    top: 0px;
+    left: 1.5rem;
+
+    border-radius: 0px 0px 4px 4px;
+    padding: 0.25rem 0.5rem;
+    background: black;
+    font-size: 0.75rem;
+    color: white;
+  }
+  .gatsby-highlight[data-language="bash"]::before {
+    color: black;
+    background: rgb(136, 224, 81);
+  }
+  :not(pre) > code[class*="language-"] {
+    margin: 0 0.2rem;
   }
 }

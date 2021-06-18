@@ -59,7 +59,9 @@ const Tags = () => {
                 <div className="tags-item" key={tagIndex}>
                   <p className="tags-item-title">
                     <AiOutlineTags className="tags-item_icon" />
-                    <span>{tagName}</span>
+                    <span>
+                      {tagName} {`(${blogs.length})`}
+                    </span>
                   </p>
                   <div className="tags-blog-list">
                     {blogs.map((blog, index) => {
