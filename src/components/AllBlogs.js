@@ -21,7 +21,7 @@ const query = graphql`
           )
         }
         childContentfulBlogMdContentTextNode {
-          childMarkdownRemark {
+          childMdx {
             timeToRead
           }
         }
@@ -50,7 +50,7 @@ const AllBlogs = () => {
             postedOn,
             coverImage,
             childContentfulBlogMdContentTextNode: {
-              childMarkdownRemark: { timeToRead },
+              childMdx: { timeToRead },
             },
           } = blog;
 
