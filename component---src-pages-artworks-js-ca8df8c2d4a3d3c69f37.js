@@ -1,2 +1,0 @@
-(self.webpackChunkridafieldnew=self.webpackChunkridafieldnew||[]).push([[546],{5594:function(e,t,n){"use strict";n.r(t);var r=n(7294),i=n(2478);t.default=function(){return r.createElement(i.Z,{seo:{title:"ArtWorks"}})}}}]);
-//# sourceMappingURL=component---src-pages-artworks-js-ca8df8c2d4a3d3c69f37.js.map
