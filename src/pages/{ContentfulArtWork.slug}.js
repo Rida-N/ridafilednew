@@ -7,14 +7,14 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { RiCalendarLine } from "react-icons/ri";
 import Markdown from "../components/Markdown";
 
-const BlogTemplate = ({ data }) => {
-  const { title, coverImage, mdContent, postedOn, slug, updatedAt } =
-    data.contentfulBlog;
+const ArtWorkTemplate = ({ data }) => {
+  console.log(data.contentfulArtWork.childContentfulArtWorkDescriptionTextNode);
   const {
-    timeToRead,
-    wordCount: { words },
-    body,
-  } = mdContent.childMdx;
+    postedOn, // TODO add hover to show posted time
+    image,
+    title,
+    childContentfulArtWorkDescriptionTextNode,
+  } = data.contentfulArtWork;
   return (
     <Layout seo={{ title: title }}>
       {/* TODO theme related */}
@@ -27,57 +27,48 @@ const BlogTemplate = ({ data }) => {
           placeholder="tracedSVG"
         />
       </Header>
-      <div className="blog-container">
-        <GatsbyImage
-          className="blog-cover-image"
-          image={getImage(coverImage)}
-          alt={title}
-        />
-
-        <div className="blog-content">
-          <div className="blog-head-text">
+      <div className="art-container">
+        <div className="art-head-text-container">
+          <div className="art-head-text">
             <h5>{title}</h5>
             <p>
               <span>
                 <RiCalendarLine className="blogs-icon_calendar" />
                 {postedOn}
               </span>
-              <span>{timeToRead} min read</span>
             </p>
           </div>
-          <Markdown>{body}</Markdown>
         </div>
+        <GatsbyImage className="" image={getImage(image)} alt={title} />
+        {childContentfulArtWorkDescriptionTextNode ? (
+          <Markdown>
+            {childContentfulArtWorkDescriptionTextNode.childMdx.body}
+          </Markdown>
+        ) : null}
       </div>
     </Layout>
   );
 };
 
 export const query = graphql`
-  query getBlog($slug: String) {
-    contentfulBlog(slug: { eq: $slug }) {
+  query getArtWork($slug: String) {
+    contentfulArtWork(slug: { eq: $slug }) {
       title
       postedOn(formatString: "YYYY.MM.DD")
-      coverImage {
+      image {
         gatsbyImageData(
           formats: [AUTO, WEBP]
-          placeholder: TRACED_SVG
           layout: FULL_WIDTH
+          placeholder: TRACED_SVG
         )
       }
-      updatedAt
-      mdContent {
+      childContentfulArtWorkDescriptionTextNode {
         childMdx {
           body
-          timeToRead
-          wordCount {
-            words
-          }
         }
       }
-      slug
-      id
     }
   }
 `;
 
-export default BlogTemplate;
+export default ArtWorkTemplate;

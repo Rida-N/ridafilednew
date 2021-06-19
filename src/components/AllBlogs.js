@@ -1,5 +1,5 @@
-import { graphql, useStaticQuery, Link } from "gatsby";
 import React from "react";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { RiCalendarLine } from "react-icons/ri";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";

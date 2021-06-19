@@ -1,21 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { AiOutlineTags } from "react-icons/ai";
-import { graphql, useStaticQuery } from "gatsby";
 import slugify from "slugify";
-
-//TODO 把AllTags存到redux里面
-const query = graphql`
-  {
-    allContentfulBlog(sort: { fields: postedOn, order: DESC }) {
-      nodes {
-        otherInfo {
-          tags
-        }
-      }
-    }
-  }
-`;
 
 const getAllTags = (nodes) => {
   const allTags = {};
@@ -33,14 +19,15 @@ const getAllTags = (nodes) => {
   });
 };
 
-const AllTags = () => {
-  const allTags = getAllTags(useStaticQuery(query).allContentfulBlog.nodes);
+const AllTags = ({ allTags, title }) => {
+  const newAllTags = getAllTags(allTags);
+
   return (
     <div className="blogs-tags">
       {/* TODO 点击TAG的时候filter 显示指定TAG下的文章，然后All Blog后面显示选中的tag名 */}
-      <h4>All Blogs</h4>
+      <h4>{title}</h4>
       <div className="blogs-tags-list">
-        {allTags.map((tag, index) => {
+        {newAllTags.map((tag, index) => {
           const [tagName, tagNumber] = tag;
           // const slug = slugify(tagName);
           return (
