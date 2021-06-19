@@ -8,7 +8,6 @@ import { RiCalendarLine } from "react-icons/ri";
 import Markdown from "../components/Markdown";
 
 const ArtWorkTemplate = ({ data }) => {
-  console.log(data.contentfulArtWork.childContentfulArtWorkDescriptionTextNode);
   const {
     postedOn, // TODO add hover to show posted time
     image,

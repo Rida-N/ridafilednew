@@ -4,13 +4,8 @@ import { Link } from "gatsby";
 
 const AllPaintings = ({ paintings, isArtWork = false }) => {
   const newPaintings = paintings.sort((a, b) => {
-    console.log(
-      "Number(a.otherInfo.rank || 0) < Number(b.otherInfo.rank || 0)",
-      (a.otherInfo.rank || 0) > (b.otherInfo.rank || 0)
-    );
     return (b.otherInfo.rank || 0) - (a.otherInfo.rank || 0);
   });
-  console.log(newPaintings);
   const rankOneImage = newPaintings[0];
   return (
     <div className="artworks-list">
