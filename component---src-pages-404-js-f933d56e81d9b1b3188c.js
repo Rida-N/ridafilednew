@@ -1,0 +1,2 @@
+(self.webpackChunkridafieldnew=self.webpackChunkridafieldnew||[]).push([[883],{9616:function(e,t,n){"use strict";n.r(t);var u=n(7294),f=n(2478),a=n(5072);t.default=function(){return u.createElement(f.Z,{seo:{title:"404 not found"}},u.createElement(a.Z,{settings:{text1:"Not found",text2:"Page not found"}}))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-f933d56e81d9b1b3188c.js.map
