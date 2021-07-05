@@ -31,7 +31,15 @@
     text-size-adjust: none;
     // letter-spacing: 0.1rem;
   }
+  ul li {
+    list-style-type: disc;
+    margin-left: 3rem;
+  }
 
+  blockquote {
+    background-color: var(--grey-10);
+    padding: 0.5rem 1rem;
+  }
   h5 {
     margin-top: 2rem;
     border-left: 0.5rem solid var(--primary-50);

@@ -42,7 +42,7 @@ const BlogTemplate = ({ data }) => {
                 <RiCalendarLine className="blogs-icon_calendar" />
                 {postedOn}
               </span>
-              <span>{timeToRead} min read</span>
+              <span>{timeToRead * 5} min read</span>
             </p>
           </div>
           <Markdown>{body}</Markdown>
