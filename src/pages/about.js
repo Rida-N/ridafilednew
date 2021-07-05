@@ -20,6 +20,7 @@ const About = () => {
         <p className="about-intro">
           I'm Rida Zhang, a coder and a designer based in China.
         </p>
+        <p>微信公众号：理达的原野</p>
         <a className="about-contact" href="mailto:im@rida.site">
           Work Contact
         </a>

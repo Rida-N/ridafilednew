@@ -6,7 +6,7 @@
   --defaultFontSize: 1rem;
   --headingFont: "Google Sans Text", Roboto, "黑体", "Microsoft Yahei",
     "Helvetica Neue", Helvetica, Tahoma;
-  --bodyFont: "黑体", "Microsoft Yahei";
+  --bodyFont: "黑体", "Microsoft Yahei"; // Avenir, "PingFangSC-Light";
   --smallText: 0.8em;
   --extraSmallText: 0.7em;
 }
@@ -34,6 +34,9 @@
   ul li {
     list-style-type: disc;
     margin-left: 3rem;
+  }
+  ol li {
+    list-style-type: decimal;
   }
 
   blockquote {
