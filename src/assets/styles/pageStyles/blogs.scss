@@ -1,5 +1,6 @@
 :root {
   --grid-show: repeat(auto-fill, minmax(20rem, 1fr));
+  --grid-line-show: repeat(auto-fill, minmax(25rem, 1fr));
   --entry-max: 25rem;
   --img-height: 15rem;
   --img-width: 100%;
@@ -50,7 +51,7 @@
   }
 
   &-show-icons {
-    padding: 0.3rem 2rem;
+    padding: 0.8rem 2rem;
     padding-top: 3rem;
     display: flex;
     justify-content: space-between;
@@ -66,6 +67,7 @@
     gap: 1.3rem 3rem;
     padding: 1rem;
     grid-template-columns: var(--grid-show);
+    border-bottom: 1px solid var(--grey-40);
   }
   &-entry {
     display: var(--blog-entry-display);
@@ -131,11 +133,23 @@
   }
 
   &-head-text {
+    position: relative;
     span {
       margin-right: 2rem;
     }
     border-bottom: 1px solid var(--grey-40);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  &-original_statement {
+    position: absolute;
+    bottom: -1.9rem;
+    font-size: 0.9rem;
+    left: 0;
+    background-color: var(--primary-60);
+    padding: 0.2rem;
+    color: white;
   }
 
   &-container {
@@ -147,6 +161,36 @@
     padding: 4rem;
     @media screen and (max-width: 500px) {
       padding: 3rem 1rem;
+    }
+  }
+}
+
+.notes {
+  &-container-head {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+  &-list {
+    display: grid;
+    gap: 1.3rem 3rem;
+    padding: 1rem;
+    grid-template-columns: var(--grid-line-show);
+    margin: 0 1rem;
+  }
+  &-info {
+    h5 {
+      font-size: 1.15rem;
+      &:hover {
+        color: var(--primary-80);
+      }
+    }
+    p,
+    span {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      color: var(--grey-80);
+      padding: 0 1.5rem 0 0;
     }
   }
 }

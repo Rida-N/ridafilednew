@@ -8,7 +8,7 @@ import { RiCalendarLine } from "react-icons/ri";
 import Markdown from "../components/Markdown";
 
 const BlogTemplate = ({ data }) => {
-  const { title, coverImage, mdContent, postedOn, slug, updatedAt } =
+  const { title, coverImage, mdContent, postedOn, slug, updatedAt, otherInfo } =
     data.contentfulBlog;
   const {
     timeToRead,
@@ -44,6 +44,11 @@ const BlogTemplate = ({ data }) => {
               </span>
               <span>{timeToRead * 5} min read</span>
             </p>
+            {!(otherInfo && otherInfo.isCopy) ? (
+              <p className="blog-original_statement">
+                原创声明：未经允许，禁止转载
+              </p>
+            ) : null}
           </div>
           <Markdown>{body}</Markdown>
         </div>
@@ -75,6 +80,9 @@ export const query = graphql`
         }
       }
       slug
+      otherInfo {
+        isCopy
+      }
       id
     }
   }

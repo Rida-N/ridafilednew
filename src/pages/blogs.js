@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Header from "../components/Header";
 import AllBlogs from "../components/AllBlogs";
+import AllNotes from "../components/AllNotes";
 import AllTags from "../components/AllTags";
 import { graphql, useStaticQuery } from "gatsby";
 
@@ -38,6 +39,7 @@ const Blog = () => {
           allTags={useStaticQuery(query).allContentfulBlog.nodes}
         />
         <AllBlogs />
+        <AllNotes />
       </div>
     </Layout>
   );

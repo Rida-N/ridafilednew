@@ -48,6 +48,16 @@
     border-left: 0.5rem solid var(--primary-50);
     padding-left: 1rem;
   }
+  h6 {
+    border-left: solid 0.3rem var(--primary-50);
+    padding: 1rem;
+    background-color: var(--primary-0);
+  }
+
+  a {
+    color: var(--primary-70);
+    font-weight: bold;
+  }
 
   table,
   td,
@@ -67,7 +77,6 @@
 
   img {
     max-width: 100%;
-    width: 55rem;
     display: block;
     margin: 3rem auto;
   }
