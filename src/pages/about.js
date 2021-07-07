@@ -16,7 +16,12 @@ const About = () => {
         />
       </Header>
       <div className="tags-container">
-        <h5>Hi there 👋</h5>
+        <h5>
+          Hi there
+          <span role="img" aria-label="hi">
+            👋
+          </span>
+        </h5>
         <p className="about-intro">
           I'm Rida Zhang, a coder and a designer based in China.
         </p>

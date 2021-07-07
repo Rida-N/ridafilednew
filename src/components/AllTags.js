@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { AiOutlineTags } from "react-icons/ai";
 import slugify from "slugify";
 
@@ -31,15 +30,12 @@ const AllTags = ({ allTags, title }) => {
           const [tagName, tagNumber] = tag;
           // const slug = slugify(tagName);
           return (
-            <Link
-              className="blogs-tags-list-item"
-              to={`/tags/${slugify(tagName, { lower: true })}`}
-              key={index}
-            >
+            <p className="blogs-tags-list-item" key={index}>
+              {/* TODO: to={`/tags/${slugify(tagName, { lower: true })}`} func search tags */}
               <AiOutlineTags className="blogs-tags-list-item_icon" />
               <span>{tagName}</span>
               <span>({tagNumber})</span>
-            </Link>
+            </p>
           );
         })}
       </div>
